@@ -1,0 +1,78 @@
+propel:
+  fs_stacks:
+    stack_id:         { type: integer, primaryKey: true, autoIncrement: true }
+    film_id:          { type: integer, foreignTable: fs_films, foreignReference: film_id, required: true }
+    user_id:          { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true }
+    word_id:          { type: integer, foreignTable: fs_stacks_words, foreignReference: word_id }
+    group_id:         { type: integer }
+    stack_seen_count: { type: integer }
+    stack_watchdate:  { type: date, required: true }
+    stack_recommend:  { type: boolean, required: true }
+    created_at:       ~
+  fs_stacks_groups:
+    group_id:       { type: integer, primaryKey: true, autoIncrement: true }
+    stack_id:       { type: integer, foreignTable: fs_stacks, foreignReference: stack_id, required: true }
+    group_user_ids: { type: longvarchar }
+  fs_stacks_comments:
+    stack_comment_id: { type: integer, primaryKey: true, autoIncrement: true }
+    stack_id:         { type: integer, foreignTable: fs_stacks, foreignReference: stack_id, required: true }
+    user_id:          { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true }
+    stack_comment_comment: {type: varchar(180), required: true}
+    created_at:       ~
+  fs_stacks_words:
+    word_id:    { type: integer, primaryKey: true, autoIncrement: true }
+    word_word:  { type: varchar(32), required: true }
+    word_value: { type:integer, required: true }
+  
+  fs_films:
+    film_id:                 { type: integer, primaryKey: true, autoIncrement: true }
+    film_title:              { type: varchar(64), required: true  }
+    film_wikipedia_title:    { type: varchar(64), required: true  }
+    film_wikipedia_poster:   { type: varchar(256) }
+    film_wikipedia_summary:  { type: longvarchar }
+    film_release:            { type: date, required: true }
+    film_wikipedia_revision: { type: integer }
+    next_sync:               { type: timestamp }
+    created_at:              ~
+    updated_at:              ~
+  fs_films_reviews:
+    review_id:      { type: integer, primaryKey: true, autoIncrement: true }
+    film_id:        { type:integer, foreignTable: fs_films, foreignReference: film_id, required: true }
+    user_id:        { type:integer, foreignTable: sf_guard_user, foreignReference: id, required: true }
+    review_content: { type: longvarchar, required: true }
+    created_at:     ~
+    updated_at:     ~
+  fs_films_reviews_comments:
+    review_comment_id: { type: integer, primaryKey: true, autoIncrement: true }
+    review_id:         { type: integer, foreignTable: fs_films_reviews, foreignReference: review_id, required: true }
+    user_id:           { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true }
+    created_at:        ~
+    
+  fs_user_relationships:
+    relationship_id:     { type: integer, primaryKey: true, autoIncrement: true }
+    first_user_id:       { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true }
+    second_user_id:      { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true }
+    relationship_status: { type: integer, required: true }
+    created_at:        ~
+    
+  sf_guard_user_profile:
+    _attributes:        { phpName: sfGuardUserProfile }
+    id:                 ~
+    user_id:            { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    user_email:         { type: varchar(128) }
+    user_about:         { type: varchar(128) }
+    user_country:       { type: varchar(128) }
+    user_first_name:    { type: varchar(32) }
+    user_last_name:     { type: varchar(32) }
+    user_twitter_uname: { type: varchar(32) }
+    user_twitter_pword: { type: varchar(32) }
+    user_twitter_bool:  { type: integer, default: 0 }
+    user_avatar_file:   { type: varchar(128) }
+    user_dob:           { type: date }
+    user_privacy_level: { type: integer, default: 0 }
+    
+  fs_beta_invitations:
+    invite_id:        { type: integer, primaryKey: true, autoIncrement: true }
+    invite_code:      { type: varchar(16) }
+    invite_allowance: { type: integer, default: 20 }
+    invite_used:      { type: integer, default: 0 }

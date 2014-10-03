@@ -1,0 +1,18 @@
+/* @group Stack Top Box */
+.stack_top_box {}
+.stack_top_box .left_col { width: 101px; }
+.stack_top_box .right_col {  margin-left: 10px; width: 614px; }
+
+.stack_top_box h2#recent_stack_title { font-weight: normal; margin: 0px 0px 5px 0px; }
+.stack_top_box h2#recent_stack_title a { border-bottom: 1px dotted #345250; color: #345250; text-decoration: none; }
+.stack_top_box h2#recent_stack_title a:hover { border-bottom: 1px solid #345250; color: #4E817E; text-decoration: none; }
+
+.stack_top_box p { margin: 10px 0px 10px 0px; }
+.stack_top_box a:hover { color: #4E817E; }
+
+#comment_form_box .right_col { margin-left: 10px; }
+
+form input { border: none; outline: none; }
+#comment_form_box label {display: none;}
+#comment_form_box textarea { font: normal normal normal 14px/14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; width: 670px; height: 60px; border: 1px solid #5B998C; outline: none;}
+#comment_form_box input#comment_submit_button { background: url(/images/home/betasplash.sprites.jpg) no-repeat 0px -96px; color: #FFF; font-size: 14px; height: 30px; width: 95px; margin: 10px 0px 10px 0px;}

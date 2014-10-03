@@ -1,0 +1,5 @@
+betaindexSuccess:
+    layout:         betasplash
+    stylesheets:    [-*]
+homefeedSuccess:
+    stylesheets:    [home/homefeed.css]

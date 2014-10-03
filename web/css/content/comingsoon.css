@@ -1,0 +1,4 @@
+/* @group coming soon list */
+ul#coming_soon_list { margin: 10px 0px 10px 10px;  font-size: 16px; line-height: 14px; }
+ul#coming_soon_list li { list-style: decimal inside none; }
+/* @end */

@@ -1,0 +1,43 @@
+.film_top_box ul#film_stack_counters li { background: url(/images/global/sprites.jpg) no-repeat 0px -144px; color: #FFF; height:30px; line-height: 13px; padding-top: 2px; width: 120px; margin-left: 10px; font-size: 12px; }
+.film_top_box ul#film_stack_counters li .number { font-size: 16px; }
+
+.film_top_box ul#film_stack_counters li .number { font-size: 16px; }
+.film_top_box #film_summary { position: relative; margin-left: 131px;}
+
+.film_top_box #film_summary a { border-bottom: 1px dotted #335250; color: #335250; font-weight: bold; text-decoration: none; }
+
+
+
+.feed_text_and_links { margin: 5px 0px 0px 40px; }
+
+/* @group Top Box */
+.film_top_box h2 { font-size: 23px; line-height: 32px; }
+/* @end */
+
+/* @group Affiliates Box */
+#affiliates_box { padding: 5px; }
+#affiliates_box a { border: none; display: block; height: 70px; }
+
+ul#film_affiliates { width: auto; margin: 0 auto; text-align: center;}
+ul#film_affiliates a img { border: none; }
+ul#film_affiliates li.affiliate { width: 100%; height: 70px; }
+ul#film_affiliates li.break { background: url(/images/film/sprites.jpg) no-repeat 0px -70px; width: 14px; height: 70px; }
+ul#film_affiliates li#itunes_affiliate { background: url(/images/film/sprites.jpg) no-repeat 0px 0px; }
+/* ul#film_affiliates li#amazon_affiliate { background: url(/images/film/sprites.jpg) no-repeat -484px 0px; } */
+ul#film_affiliates li#play_affiliate { background: url(/images/film/sprites.jpg) no-repeat -242px 0px; }
+/* @end */
+
+/* @group Recent Watches */
+#recent_watches_feed li { margin-bottom: 10px; }
+/* @end */
+
+/* @group Word Cloud */
+#word_cloud { text-align: center; }
+/* @end */
+
+/* @group Recommendation Totals */
+#recommendation_totals #positive_percentage {width: 47%; margin-right: 3%; }
+#recommendation_totals #positive_percentage h2 { color: #71AE93; font-size: 36px; line-height: 36px;}
+#recommendation_totals #negative_percentage {width: 47%; margin-left: 3%;}
+#recommendation_totals #negative_percentage h2 { color: #AF7279; font-size: 36px; line-height: 36px;}
+/* @end */

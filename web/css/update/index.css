@@ -1,0 +1,36 @@
+/* @group Search Form */
+form input { border: none; outline: none; }
+input#search_form_film_title { background: url('/images/global/inputs.sprites.jpg') no-repeat 0px -30px; font-size: 16px; height: 20px; padding: 5px 5px 5px 5px; width: 625px; }
+input#search_submit_button, input#stacking_submit_button { background: url('/images/global/inputs.sprites.jpg') no-repeat 0px -60px; color: #FFF; font-size: 12px; height: 30px;  width: 110px; }
+input#submit_button.selection { background: url('/images/global/inputs.sprites.jpg') no-repeat 0px -60px; color: #FFF; font-size: 12px; height: 30px; line-height: 28px; width: 110px; margin-top: 5px; }
+/* @end */
+/* @group Search Results */
+#search_results { width: auto; }
+#search_results li.search_poster img { height: 148px; width: 100px;}
+#search_results li.information { margin-left: 5px; width: 255px; }
+#search_results li.information p { margin-bottom: 9px; }
+#search_results li.information h3 { margin-bottom: 7px; }
+#search_results li.result { width: 365px; margin-bottom: 15px; }
+#search_results.one_result li.result { width: 730px; }
+#search_results li.search_poster img { height: 148px; width: 100px;}
+#search_results.one_result li.information { margin-left: 5px; width: 620px; }
+/* @end */
+/* @group Stacking Form */
+#stacking_information { margin-left: 10px; width: 617px; }
+#stacking_information p { margin-top: 10px; }
+#stacking_film_poster { width: 119px; }
+ol#remember_points { font-size: 12px; margin-top: 5px; }
+ol#remember_points li { margin-bottom: 5px; padding-left: 15px; }
+ol#remember_points li.important { font-weight: bold; }
+
+table#widgets { width: 617px; margin: 7px 0px 0px 0px;}
+table#widgets tr { }
+table#widgets th { width: 300px; height: 25px; }
+table#widgets td { width: 327px; height: 25px; }
+table#widgets label { color: #345250; font-size: 14px; font-weight: normal; letter-spacing: -0.2px; }
+
+#stacking_form_film_words { width: 120px;}
+#stacking_form_film_recommend { width: 120px;}
+
+#submit_button { margin-top: 10px;}
+/* @end */

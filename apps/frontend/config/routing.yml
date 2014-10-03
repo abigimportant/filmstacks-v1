@@ -1,0 +1,117 @@
+import_films:
+  url:   /import
+  param: {module:import, action:index}
+
+#### Stacking form ####
+stack_form:
+  url:   /update
+  param: {module:update, action:index}
+#### Routing for public feed ####
+# Route to public feed
+public_feed:
+  url:   /public_feed
+  param: {module: publicfeed, action: index}
+public_feed_page:
+  url:   /public_feed/:page
+  param: {module: publicfeed, action: index}
+#### Account Auth for Login/Logout ####
+# Route to login to Filmstacks
+sf_guard_signin:
+  url:   /login
+  param: {module: sfGuardAuth, action: signin}
+# Route to logout of Filmstacks
+sf_guard_signout:
+  url:   /logout
+  param: {module: sfGuardAuth, action: signout}
+
+#### Account registration & creation ####
+# Route to create an account at Filmstacks
+create_account:
+  url:   /join_in
+  param: {module: account, action: new}  
+
+#### Stack page routes ####
+# Route to individual stack
+stack:
+  url:   /stack/:stack_id
+  param: {module: stack, action: index}
+
+#### Profile related routes ####
+# Route for feed pages
+user_profile_feedpage:
+  url:   /user/:username/page/:page
+  param:  {module: user, action: index}
+# Route to profile feed and main information
+user_profile:
+  url:   /user/:username
+  param: {module: user, action: index}
+# Route to add user too friends
+user_profile_addfriend:
+  url:   /user/:username/add
+  param: {module: user, action: addfriend}
+# Route to remove user from friends
+user_profile_removefriend:
+  url:   /user/:username/remove
+  param: {module: user, action: removefriend}
+# Route to display of users friends
+user_profile_friends:
+  url:   /user/:username/friends
+  param: {module: user, action: friends}
+# Route to display of users followers
+user_profile_followers:
+  url:   /user/:username/followers
+  param: {module: user, action: followers}
+## Route to users top stacks
+#user_profle_topstacks:
+#  url:  /user/:username/top_stacks
+#  param: {module:user, action:topstacks}
+
+#### Film page related routes ####
+# Route to primary film page
+film_page:
+  url:    /film/:film_identifiers
+  param:  {module: film, action: index}
+
+#### Settings page routes ####
+# Route to primary settings page
+account_settings:
+  url:    /settings
+  param:  {module: account, action: settings}
+# Route to primary settings page
+account_settings_save:
+  url:    /settings/save
+  param:  {module: account, action: savesettings}
+# Route to password settings page
+settings_password:
+  url:    /settings/password
+  param:  {module: account, action: passwords}
+
+#### Content routes ####
+# Route to about filmstacks page
+content_about:
+  url:    /about
+  param:  {module: content, action: about}
+content_comingsoon:
+  url:    /coming_soon
+  param:  {module: content, action: comingsoon}
+  
+#### Homepage routes for logged in/out ####
+# Route for feed pages
+user_home_page:
+  url:   /home/page/:page
+  param:  {module: in_home, action: index}
+# Route to home when user is logged in
+user_home:
+  url:    /home
+  param: {module: home, action: homefeed}
+# Route to index when user is logged out
+homepage:
+  url:    /
+  param: {module: home, action: betaindex}
+
+#### Default routes ####
+#default_index:
+#  url:    /:module
+#  param:  {action: index}
+#default:
+#  url:    /:module/:action/*

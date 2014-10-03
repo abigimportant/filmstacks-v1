@@ -1,0 +1,14 @@
+/* @group is and is not */
+ul.is_and_not li.phrase { width: 150px; }
+ul.is_and_not li.list { margin-left: 10px; font-size: 14px; line-height: 14px; }
+ul.is_and_not li.list ul li { list-style: disc inside none; }
+ul.is_and_not li.list ul li { margin-bottom: 5px; }
+/* @end */
+
+/* @group staff section */
+ul.staff .staff_picture {width: 150px;}
+ul.staff .information { margin-top: 10px; margin-left: 10px; width: 580px; }
+ul.staff .information h4 { margin-bottom: 10px; }
+ul.staff .information p { font-size: 12px; margin-bottom: 10px; letter-spacing: 0.5px; line-height: 14px; }
+ul.staff .information p.larger { font-size: 14px; line-height: 16px;}
+/* @end */

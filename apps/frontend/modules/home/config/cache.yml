@@ -1,0 +1,4 @@
+betaindex:
+    enabled:        on
+    with_layout:    true
+    lifetime:       172800   #48 hour period

@@ -1,0 +1,4 @@
+aboutSuccess:
+    stylesheets: [content/about.css]
+comingsoonSuccess:
+    stylesheets: [content/comingsoon.css]

@@ -1,0 +1,106 @@
+# # Populate this file with data to be loaded by your ORM's *:data-load task.
+# # You can create multiple files in this directory (i.e. 010_users.yml,
+# # 020_articles.yml, etc) which will be loaded in alphabetical order.
+# # 
+# # See documentation for your ORM's *:data-load task for more information.
+# 
+FsBetaInvitations:
+  nick_large:
+    invite_code: c3fl1djbn2v8k3s7
+    invite_allowance: 500
+    invite_used: 0
+FsStacksWords:
+  adventurous:
+    word_word: Adventurous
+  romantic:
+    word_word: Romantic
+  amusing:
+    word_word: Amusing  
+  artistic:
+    word_word: Artistic
+  annoying:
+    word_word: Annoying
+  meh:
+    word_word: Meh
+  stellar:
+    word_word: Stellar   
+  epic:
+    word_word: Epic
+  distressing:
+    word_word: Distressing
+  cheerful:
+    word_word: Cheerful
+  confusing:
+    word_word: Confusing    
+  creative:
+    word_word: Creative
+  eccentric:
+    word_word: Eccentric
+  fascinating:
+    word_word: Fascinating
+  gloomy:
+    word_word: Gloomy   
+  happy:
+    word_word: Happy
+  imaginative:
+    word_word: Imaginative
+  impressive:
+    word_word: Impressive  
+  infuriating:
+    word_word: Infuriating
+  inspiring:
+    word_word: Inspiring
+  nostalgic:
+    word_word: Nostalgic
+  sad:
+    word_word: Sad  
+  stressful:
+    word_word: Stressful
+  overlooked:
+    word_word: Overlooked
+  letdown:
+    word_word: Letdown
+  good:
+    word_word: Good   
+  bad:
+    word_word: Bad
+  ok:
+    word_word: Ok
+  terrible:
+    word_word: Terrible
+  amazing:
+    word_word: Amazing   
+  fantastic:
+    word_word: Fantastic   
+  disgusting:
+    word_word: Disgusting
+  heartbreaking:
+    word_word: Heartbreaking
+  heartwarming:
+    word_word: Heartwarming
+  depressing:
+    word_word: Depressing  
+  actionpacked:
+    word_word: Action-packed
+  unbelievable:
+    word_word: Unbelievable
+  boring:
+    word_word: Boring
+  pointless:
+    word_word: Pointless
+  trash:
+    word_word: Trash
+  flawed:
+    word_word: Flawed
+  disappointing:
+    word_word: Disappointing
+  feelgood:
+    word_word: Feel-good
+  awesome:
+    word_word: Awesome
+  crazy:
+    word_word: Crazy
+  weird:
+    word_word: Weird 
+  badass:
+    word_word: Badass

@@ -1,0 +1,6 @@
+all:
+  #configurations for sfGuard    
+  sf_guard_plugin:
+      routes_register: false              # Disable automatic route registering
+      success_signin_url:      @user_home # User logged in - direct to home feed
+      success_signout_url:     @homepage  # Not logged in - direct to home registration

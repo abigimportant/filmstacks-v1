@@ -1,0 +1,48 @@
+/* @group Most recent stack */
+#most_recent_stack .left_col { width: 101px; }
+#most_recent_stack .right_col { margin-left: 10px; width: 635px; }
+/* @end */
+
+/* @group User Details */
+#user_details { color: #6BA09D; padding-right: 5px; font-size: 13px; line-height: 16px;  }
+#user_details .username { color: #57807E; font-weight: bold; }
+#user_details #about_me { color: #454C46; }
+/* @end */
+
+#profile_buttons li { color: #FFF; display: block; font-size: 12px; height: 30px; line-height: 28px; ; width: 110px; text-align: center; }
+#profile_buttons a { color: #FFF; border: none; }
+#profile_buttons li#add_user_button { background: url('/images/global/inputs.sprites.jpg') no-repeat 0px -60px; }
+#profile_buttons li#remove_user_button { background: url('/images/global/inputs.sprites.jpg') no-repeat 0px -60px; }
+#profile_buttons li a { width: 110px; height: 30px;  display:block; }
+
+#most_recent_stack h2#recent_stack_title { font-weight: normal; margin: 0px 0px 5px 0px; }
+#most_recent_stack h2#recent_stack_title a { border-bottom: 1px dotted #345250; color: #345250; text-decoration: none; }
+#most_recent_stack h2#recent_stack_title a:hover { border-bottom: 1px solid #345250; color: #4E817E; text-decoration: none; }
+
+#most_recent_stack p { margin-bottom: 10px; }
+#profile_feed p a, #profile_top p a { border-bottom: 1px dotted #335250; color: #335250; font-weight: bold; text-decoration: none; }
+#most_recent_stack a:hover { color: #4E817E; }
+
+#profile_feed { margin-top: 15px; }
+#profile_feed li { margin-bottom: 10px; }
+#feeditem_top_corners { background: url(/images/global/gradients.jpg) repeat-x 0px 0px; height: 4px; }
+#feeditem_top_corner_left { background: url(/images/global/sprites.jpg) no-repeat -26px -92px; height: 4px; width: 4px; }
+#feeditem_top_corner_right { background: url(/images/global/sprites.jpg) no-repeat -30px -92px; height: 4px; width: 4px; }
+
+#feeditem_bottom_corners { background: url(/images/global/gradients.jpg) repeat-x 0px -12px; height: 4px; }
+#feeditem_bottom_corner_left { background: url(/images/global/sprites.jpg) no-repeat -26px -96px; height: 4px; width: 4px; }
+#feeditem_bottom_corner_right { background: url(/images/global/sprites.jpg) no-repeat -30px -96px; height: 4px; width: 4px; }
+
+#feed_item_content { border-left: 2px solid #C8D9DA; border-right: 2px solid #C8D9DA; padding: 5px 5px 5px 5px; }
+#feed_item_content .feed_item_left { width: 55px; }
+#feed_item_content .feed_item_center { margin-left: 5px; width: 530px; }
+#feed_item_content .feed_item_center .center_top_row { width: 530px; height: 20px;}
+#feed_item_content .feed_item_center p { width: 530px; }
+
+#feed_item_content .feed_item_right{ width: 160px; }
+#feed_item_content .feed_item_right a { margin-left: 4px; }
+#feed_item_content .stacked_date { color: #335250; font-size: 11px; font-style: italic; margin-top: 10px;}
+
+#feed_item_content .feed_item_title { font-weight: normal; margin: 0px 0px 5px 0px; }
+#feed_item_content .feed_item_title a { border-bottom: 1px dotted #345250; color: #345250; text-decoration: none; }
+#feed_item_content .feed_item_title a:hover { border-bottom: 1px solid #345250; color: #4E817E; text-decoration: none; }
